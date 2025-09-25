@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-24 17:50:01.801457",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_applicant",
+  "applicant_name",
+  "mo_no",
+  "salary",
+  "column_break_nali",
+  "designation",
+  "segment",
+  "hq",
+  "cug_sim",
+  "i_card",
+  "visiting_card"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "mo_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mo No",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Segment",
+   "options": "Segment"
+  },
+  {
+   "fieldname": "hq",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HQ"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Int",
+   "label": "Salary"
+  },
+  {
+   "default": "0",
+   "fieldname": "cug_sim",
+   "fieldtype": "Check",
+   "label": "CUG Sim"
+  },
+  {
+   "default": "0",
+   "fieldname": "i_card",
+   "fieldtype": "Check",
+   "label": "I Card"
+  },
+  {
+   "default": "0",
+   "fieldname": "visiting_card",
+   "fieldtype": "Check",
+   "label": "Visiting Card"
+  },
+  {
+   "fieldname": "column_break_nali",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-24 17:59:32.634968",
+ "modified_by": "Administrator",
+ "module": "Sheetal Hrms",
+ "name": "Training Event List",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
