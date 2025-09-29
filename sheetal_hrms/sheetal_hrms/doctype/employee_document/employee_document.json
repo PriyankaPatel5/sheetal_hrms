@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:document_name",
  "creation": "2025-09-24 15:43:09.259908",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,16 +14,18 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Document Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-24 15:44:05.800576",
+ "modified": "2025-09-29 17:31:14.870164",
  "modified_by": "Administrator",
  "module": "Sheetal Hrms",
  "name": "Employee Document",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

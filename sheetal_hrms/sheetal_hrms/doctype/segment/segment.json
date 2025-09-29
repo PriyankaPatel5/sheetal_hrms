@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:segment_name",
  "creation": "2025-09-24 12:14:03.600965",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,16 +14,18 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Segment Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-24 15:45:08.065654",
+ "modified": "2025-09-29 17:29:42.294899",
  "modified_by": "Administrator",
  "module": "Sheetal Hrms",
  "name": "Segment",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
