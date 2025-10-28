@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "W-.#####",
+ "creation": "2025-10-15 18:09:10.698605",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "mo_number",
+  "column_break_x0di",
+  "adhar_number",
+  "pan_number",
+  "section_break_jlwz",
+  "contractor",
+  "village",
+  "column_break_vtq1",
+  "driver",
+  "salary_section",
+  "gross_salary",
+  "column_break_ioni",
+  "per_day_rate",
+  "bank_details_section",
+  "bank_name",
+  "salary_name",
+  "column_break_e76i",
+  "bank_ac_no",
+  "ifsc_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "label": "Bank A/C No."
+  },
+  {
+   "fieldname": "salary_name",
+   "fieldtype": "Data",
+   "label": "Salary Name"
+  },
+  {
+   "fieldname": "column_break_e76i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jlwz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vtq1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary_section",
+   "fieldtype": "Section Break",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "gross_salary",
+   "fieldtype": "Float",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "column_break_ioni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "per_day_rate",
+   "fieldtype": "Float",
+   "label": "Per Day Rate"
+  },
+  {
+   "fieldname": "mo_number",
+   "fieldtype": "Data",
+   "label": "Mo Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_break_x0di",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adhar_number",
+   "fieldtype": "Data",
+   "label": "Adhar Number"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-16 17:36:27.232421",
+ "modified_by": "Administrator",
+ "module": "Sheetal Hrms",
+ "name": "Worker",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

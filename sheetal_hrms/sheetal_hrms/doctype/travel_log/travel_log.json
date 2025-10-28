@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-01 18:14:59.206307",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "column_break_kzop",
+  "date",
+  "section_break_jcgb",
+  "in_time_odometer",
+  "km",
+  "column_break_qm4i",
+  "out_time_odometer",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kzop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_jcgb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "in_time_odometer",
+   "fieldtype": "Attach",
+   "label": "In Time (Odometer)"
+  },
+  {
+   "fieldname": "km",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "KM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qm4i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "out_time_odometer",
+   "fieldtype": "Attach",
+   "label": "Out Time (odometer)"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-01 18:17:23.650458",
+ "modified_by": "Administrator",
+ "module": "Sheetal Hrms",
+ "name": "Travel Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -8,8 +8,10 @@
  "field_order": [
   "job_applicant",
   "hours",
+  "trainers_opinion",
   "column_break_kduu",
   "grade",
+  "hods_opinion",
   "comments"
  ],
  "fields": [
@@ -41,13 +43,25 @@
    "fieldtype": "Text",
    "in_list_view": 1,
    "label": "Comments"
+  },
+  {
+   "fieldname": "trainers_opinion",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Trainer's Opinion"
+  },
+  {
+   "fieldname": "hods_opinion",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "HoD's Opinion"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-29 18:06:20.870643",
+ "modified": "2025-10-17 17:06:25.656093",
  "modified_by": "Administrator",
  "module": "Sheetal Hrms",
  "name": "Training Result List",

@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Sal Slip/{party}-{#####}",
+ "creation": "2025-10-16 14:33:19.119610",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "party",
+  "party_name",
+  "column_break_gl7b",
+  "posting_date",
+  "section_break_zzun",
+  "start_date",
+  "end_date",
+  "section_break_dsw5",
+  "payment_days",
+  "absent_days",
+  "column_break_4oxl",
+  "per_day_rate",
+  "net_payment",
+  "section_break_v5wj",
+  "total_attendance",
+  "total_payment",
+  "column_break_omck",
+  "per_person_rate",
+  "section_break_fiyg",
+  "worker_details",
+  "grand_total",
+  "remark_section",
+  "remark",
+  "column_break_k4r6"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_days",
+   "fieldtype": "Float",
+   "label": "Payment Days",
+   "mandatory_depends_on": "eval: doc.party_type==\"Worker\"",
+   "precision": "1"
+  },
+  {
+   "fieldname": "absent_days",
+   "fieldtype": "Float",
+   "label": "Absent Days",
+   "precision": "1"
+  },
+  {
+   "fieldname": "per_day_rate",
+   "fieldtype": "Float",
+   "label": "Per Day Rate"
+  },
+  {
+   "fieldname": "net_payment",
+   "fieldtype": "Float",
+   "label": "Net Payment"
+  },
+  {
+   "fieldname": "column_break_gl7b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zzun",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.party_type==\"Worker\"",
+   "fieldname": "section_break_dsw5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4oxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Party Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark_section",
+   "fieldtype": "Section Break",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_k4r6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.party_type==\"Driver\"",
+   "fieldname": "section_break_v5wj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_attendance",
+   "fieldtype": "Float",
+   "label": "Total Attendance",
+   "mandatory_depends_on": "eval: doc.party_type==\"Driver\"",
+   "precision": "1"
+  },
+  {
+   "fieldname": "total_payment",
+   "fieldtype": "Float",
+   "label": "Total Payment"
+  },
+  {
+   "fieldname": "column_break_omck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "per_person_rate",
+   "fieldtype": "Float",
+   "label": "Per Person Rate"
+  },
+  {
+   "depends_on": "eval: doc.party_type==\"Supplier\"",
+   "fieldname": "section_break_fiyg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "worker_details",
+   "fieldtype": "Table",
+   "label": "Worker Details",
+   "options": "Worker Details"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-16 18:38:12.664635",
+ "modified_by": "Administrator",
+ "module": "Sheetal Hrms",
+ "name": "Worker Salary",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
